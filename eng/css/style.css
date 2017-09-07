@@ -1,0 +1,473 @@
+body {
+padding: 0;
+margin: 0;
+font-family: 'Raleway', sans-serif;
+background: url(../images/fancy_deboss.png) repeat top left;
+color: #444;
+overflow-x: hidden;
+min-width: 320px;
+-webkit-font-smoothing: antialiased;
+font-weight: 400;
+
+}
+.clearfix:before, 
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+/*navigacija početak*/
+#navigation {
+position: fixed;
+top: 0;
+width: 100%;
+color: #ffffff;
+height: 35px;
+text-align: center;
+padding-top: 15px;
+-webkit-box-shadow: 0px 0px 8px 0px #000000;
+-moz-box-shadow: 0px 0px 8px 0px #000000;
+box-shadow: 0px 0px 8px 0px #000000;
+background: url(../images/bg.jpg) repeat top left;
+z-index: 9999;
+}
+#navigation a {
+font-size: 20px;
+padding-left: 15px;
+padding-right: 15px;
+color: #F2B704;
+text-decoration: none;
+}
+#navigation a:hover {
+color: #D78E02;
+} 
+/*navigacija kraj*/
+
+/*opis početak*/
+.pocetna{
+    padding: 70px 0 0 0;
+    margin: 0 auto;
+    width: 60%;
+    text-align: justify;
+    line-height: 1.5em;
+}
+.content-top img{
+    float: left;
+    padding: 0 10px 10px 0;
+}
+.pocetna span{
+    color: #BE6D03;
+}
+.content-bottom img{
+    float: right;
+    padding-left: 10px;
+}
+/*opis kraj*/
+
+/*ribbon galerija početak*/
+.ribbon {
+   width: 342px;
+   position: relative;
+   text-align: center;
+   font-size: 19px!important;
+   background: #573a01;
+   background: -webkit-gradient(linear, left top, left bottom, from(#573a01), to(#412a1f));
+   background: -webkit-linear-gradient(top, #573a01, #412a1f);
+   background: -moz-linear-gradient(top, #573a01, #412a1f);
+   background: -ms-linear-gradient(top, #573a01, #412a1f);
+   background: -o-linear-gradient(top, #573a01, #412a1f);
+   background-image: -ms-linear-gradient(top, #573a01 0%, #412a1f 100%);
+   -webkit-box-shadow: rgba(000,000,000,0.3) 0 1px 1px;
+   -moz-box-shadow: rgba(000,000,000,0.3) 0 1px 1px;
+   box-shadow: rgba(000,000,000,0.3) 0 1px 1px;
+   font-family: 'Raleway', sans-serif;
+   margin: 0 auto 50px auto;
+   }
+.ribbon h1 {
+   font-size: 25px!important;
+   color: #f2b604;
+   margin:0px;
+   padding: 15px 10px;
+   }
+.ribbon:before, .ribbon:after {
+   content: '';
+   position: absolute;
+   display: block;
+   bottom: -1em;
+   border: 1.5em solid #573a01;
+   z-index: -1;
+   }
+.ribbon:before {
+   left: -2em;
+   border-right-width: 1.5em;
+   border-left-color: transparent;
+   -webkit-box-shadow: rgba(000,000,000,0.4) 1px 1px 1px;
+   -moz-box-shadow: rgba(000,000,000,0.4) 1px 1px 1px;
+   box-shadow: rgba(000,000,000,0.4) 1px 1px 1px;
+   }
+.ribbon:after {
+   right: -2em;
+   border-left-width: 1.5em;
+   border-right-color: transparent;
+   -webkit-box-shadow: rgba(000,000,000,0.4) -1px 1px 1px;
+   -moz-box-shadow: rgba(000,000,000,0.4) -1px 1px 1px;
+   box-shadow: rgba(000,000,000,0.4) -1px 1px 1px;
+   }
+.ribbon .ribbon-content:before, .ribbon .ribbon-content:after {
+   border-color: #412a1f transparent transparent transparent;
+   position: absolute;
+   display: block;
+   border-style: solid;
+   bottom: -1em;
+   content: '';
+   }
+.ribbon .ribbon-content:before {
+   left: 0;
+   border-width: 1em 0 0 1em;
+   }
+.ribbon .ribbon-content:after {
+   right: 0;
+   border-width: 1em 1em 0 0;
+   }
+.ribbon-stitches-top {
+   margin-top:2px;
+   border-top: 1px dashed rgba(0, 0, 0, 0.2);
+   -moz-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+   -webkit-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+   box-shadow: 0px 0px 2px rgba(255, 255, 255, 0.5);
+   }
+.ribbon-stitches-bottom {
+   margin-bottom:2px;
+   border-top: 1px dashed rgba(0, 0, 0, 0.2);
+   -moz-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.3);
+   -webkit-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.3);
+   box-shadow: 0px 0px 2px rgba(255, 255, 255, 0.3);
+   }
+/*ribbon galerija kraj*/
+
+/*galerija početak*/
+.wrapper {
+    position: relative;
+    max-width: 840px;
+    width: 100%;
+    padding: 30px 50px 0 50px;
+    margin: 0 auto;
+}
+.shadow {
+    width: 100%;
+    height: 168px;
+    position: relative;
+    margin-top: -110px;
+    background: transparent url(../images/shadow.png) no-repeat bottom center;
+    background-size: 100% 100%;
+    z-index: -1;
+    display: none;
+}
+.nav-arrows {
+    display: none;
+}
+.nav-arrows a {
+    width: 42px;
+    height: 42px;
+    background: #cbbfae url(../images/nav.png) no-repeat top left;
+    position: absolute;
+    top: 50%;
+    left: 2px;
+    text-indent: -9000px;
+    cursor: pointer;
+    margin-top: -21px;
+    opacity: 0.9;
+    border-radius: 50%;
+    box-shadow: 0 1px 1px rgba(255,255,255,0.8);
+}
+.nav-arrows a:first-child{
+    left: auto;
+    right: 2px;
+    background-position: top right;
+}
+.nav-arrows a:hover {
+    opacity: 1;
+}
+/*galerija kraj*/
+
+/*festival početak*/
+#festival{
+    padding-top: 0;
+}
+#festival img{
+    float: right;
+    padding: 10px 0 10px 10px;
+}
+.accordion, .accordion * {
+    -webkit-box-sizing:border-box; 
+    -moz-box-sizing:border-box; 
+    box-sizing:border-box;
+} 
+.accordion {
+    
+    box-shadow:0px 1px 3px rgba(0,0,0,0.25);
+    border-radius:3px;
+    background: rgba(255,255,255,0.3);
+    width: 60.7%;
+    margin: 0 auto 80px auto;
+
+}
+.accordion-section-title {
+    width:100%;
+    padding:15px;
+    display:inline-block;
+    border-top: 1px solid #B2ECE6;
+    background: rgba(114,212,202,1);
+    transition:all linear 0.15s;
+    font-size:1.200em;
+    text-shadow: 0 1px 2px #21756A;
+    color:#fff;
+    text-decoration: none;
+} 
+.accordion-section-title.active, .accordion-section-title:hover {
+    background: linear-gradient(to bottom, rgba(107,198,186,1) 0%,rgba(57,175,154,1) 100%);
+} 
+.accordion-section:last-child .accordion-section-title {
+    border-bottom:none;
+}
+.accordion-section-content {
+    padding:15px;
+    display:none;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+td, th {
+    padding: 0.75em 1.5em;
+    text-align: center;
+}
+tr:hover {
+    background-color: rgba(129,208,177,0.6);
+}
+.row-head{
+  background-color: rgb(129,208,177);
+}
+/*festival kraj*/
+
+/*kontakt početak*/
+.ribbon2{
+  background: rgba(200,200,200,.5);
+  width: 50px;
+  height: 70px;
+  margin: 0 auto;
+  position: relative;
+  top: 19px;
+  border: 1px solid rgba(255,255,255,.3);
+  border-top: 2px solid rgba(255,255,255,.5);
+  border-bottom: 0;  
+  border-radius: 5px 5px 0 0;
+  box-shadow: 0 0 3px rgba(0,0,0,.7); 
+}
+.ribbon2:before{
+  content:"";
+  display: block;
+  width: 15px;
+  height: 15px;
+  background: #4E535B;
+  border: 4px solid #cfd0d1;
+  margin: 18px auto;
+  box-shadow: inset 0 0 5px #000, 0 0 2px #000, 0 1px 1px 1px #A7A8AB;
+  border-radius: 100%;
+}
+.login{
+  background: rgba(255,255,255,0.3);
+  border-bottom: 2px solid #C5C5C8;
+  border-radius: 5px;
+  text-align: center;
+  color: #36383C;
+  text-shadow: 0 1px 0 #FFF;
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 15px 40px 20px 40px;
+  box-shadow: 0 0 3px #000;
+  margin-bottom: 10px;
+}
+.login:before{
+  content:"";
+  display: block;
+  width: 70px;
+  height: 4px;
+  background: #4E535B;
+  border-radius: 5px;
+  border-bottom: 1px solid #FFFFFF;
+  border-top: 2px solid #CBCBCD;
+  margin: 0 auto;
+}
+h3{
+  font-size: 1.6em;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.input{
+  text-align: left;
+  background: #E5E7E9;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: inset 0 0 3px #65686E;
+  border-bottom: 1px solid #FFF;
+}
+input{
+  width: 260px;
+  background: transparent;
+  border: 0;
+  line-height: 3.6em;
+  box-sizing: border-box;
+  color: #71747A;
+  text-shadow: 0 1px 0 #FFF;
+  font-family: 'Raleway', sans-serif;
+}
+input:focus{
+  outline: none;
+}
+.blockinput{
+  border-bottom: 1px solid #BDBFC2;
+  border-top: 1px solid #FFFFFF;
+}
+.blockinput:first-child{
+  border-top: 0;
+}
+.blockinput:last-child{
+  border-bottom: 0;
+}
+.blockinput i{
+  padding-right: 10px;
+  color: #B1B3B7;
+  text-shadow: 0 1px 0 #FFF;
+}
+::-webkit-input-placeholder {
+  color: #71747A;
+  text-shadow: 0 1px 0 #FFF;
+}
+textarea{
+    background: #E5E7E9;
+    border:0;
+    outline: none;
+    resize: none;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+.send{
+  margin-top: 20px;
+  display: block;
+  width: 100%;
+  line-height: 2em;
+  background: rgba(114,212,202,1);
+  border-radius: 5px;
+  border:0;
+  border-top: 1px solid #B2ECE6;
+  box-shadow: 0 0 0 1px #46A294, 0 2px 2px #808389;
+  color: #FFFFFF;
+  font-size: 1.5em;
+  text-shadow: 0 1px 2px #21756A;
+  font-family: 'Raleway', sans-serif;
+}
+.send:hover{
+ background: linear-gradient(to bottom, rgba(107,198,186,1) 0%,rgba(57,175,154,1) 100%);  
+}
+.send:active{
+  box-shadow: inset 0 0 5px #000;
+  background: linear-gradient(to bottom, rgba(57,175,154,1) 0%,rgba(107,198,186,1) 100%); 
+}
+/*kontakt kraj*/
+/*footer pocetak*/
+footer{
+  margin-top: 50px;
+}
+.footer-info{
+margin: 0 auto;
+width: 67%;
+color: #fff;
+height: 300px;
+text-align: center;
+padding-top: 15px;
+-webkit-box-shadow: 0px 0px 8px 0px #000000;
+-moz-box-shadow: 0px 0px 8px 0px #000000;
+box-shadow: 0px 0px 8px 0px #000000;
+background: url(../images/bg.jpg) repeat top left;
+}
+.footer-info a{
+  text-decoration: none;
+  color: #fff;
+}
+.footer-left{
+  float: left;
+  width: 75%;
+  text-align: left;
+  padding-left: 5%;
+}
+.footer-right{
+  float: left;
+  width: 15%;
+  text-align: right;
+  padding-right: 5%;
+  padding-top: 25px;
+}
+.footer-bottom{
+  width: 100%;
+  float: left;
+  text-align: center;
+}
+/*footer kraj*/  
+a.back-to-top {
+  display: none;
+  width: 60px;
+  height: 60px;
+  text-indent: -9999px;
+  position: fixed;
+  z-index: 999;
+  right: 20px;
+  bottom: 20px;
+  background: #412A1F url(../images/up-arrow.png) no-repeat center 43%;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+}
+a:hover.back-to-top {
+  background-color: #573A01;
+}
+
+#youtube img{
+  border-radius: 5px;
+}
+
+.zahvala{
+    padding: 70px 0 0 0;
+    margin: 0 auto;
+    width: 20%;
+    text-align: justify;
+    line-height: 1.5em;
+}
+
+.zahvala a{
+  text-decoration:none;
+}
+
+
+@media only screen and (max-width: 550px) {
+  #navigation a {
+    font-size: 10px;
+  }
+  .pocetna {
+    width: 90%;
+  }
+  table {
+    font-size: 7px;
+  }
+}
+
+@media only screen and (min-width:550px) and (max-width: 900px) {
+  table {
+    font-size: 10px;
+  }
+}
+
+
